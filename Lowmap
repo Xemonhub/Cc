@@ -1,0 +1,22 @@
+local args = {
+    [1] = "ผมเป็นเGY และผมอยากโdนอัdถั่วดำ😘😘🥵🥵",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+
+local player = game.Players.LocalPlayer
+game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(203, 13, 931)
+wait()
+while _G.AutoFarm do wait(-10)
+for i,v in pairs(workspace:GetChildren()[78]:GetDescendants()) do
+if v:IsA("Part") then 
+      local Prox = v:FindFirstChildOfClass("ProximityPrompt")
+if Prox then
+  fireproximityprompt(Prox)
+    if player.leaderstats.Cash.Value >= 500000 then
+        player:Kick("You have 500,000 Cash! 😘😘😘")
+      end
+    end
+  end
+end
+end
